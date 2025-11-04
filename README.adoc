@@ -32,6 +32,20 @@ And then execute:
 bundle install
 ----
 
+=== Installation with Nix
+
+If you use the Nix package manager, you can build and install Fontist directly:
+
+[source,sh]
+----
+git clone https://github.com/fontist/fontist.git
+cd fontist
+nix-build
+./result/bin/fontist --help
+----
+
+For detailed Nix installation instructions, see link:NIX_INSTALL.md[NIX_INSTALL.md].
+
 === Fetch formulas
 
 After installation, please fetch formulas via the `fontist` command:
