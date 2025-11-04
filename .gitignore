@@ -6,7 +6,9 @@
 /pkg/
 /spec/reports/
 /tmp/
-Gemfile.lock
+
+# Note: Gemfile.lock is NOT ignored for Nix packaging
+# It's needed for reproducible builds with Nix
 
 # fonts
 /spec/fixtures/fonts/*
@@ -24,3 +26,11 @@ Gemfile.lock
 # VS Code
 .vscode
 test*
+
+# Bundler
+/vendor/bundle/
+/.gems/
+
+# Nix
+/result
+/result-*
